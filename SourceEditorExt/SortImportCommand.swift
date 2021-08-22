@@ -57,7 +57,7 @@ class SortImportCommand: NSObject, XCSourceEditorCommand {
     }
 
     private func processImportLines(lines: [String]) -> SortImportProcessResult {
-        let systemFrameworks = ["UIKit", "Foundation", "CoreGraphic", "MetalKit", "AVKit", "ARKit"]
+        let systemFrameworks = ["UIKit", "Foundation", "CoreGraphic", "MetalKit", "AVKit", "ARKit", "Photos", "Adress", "Accounts", "Combine", "CoreData", "Contacts", "ContactsUI", "CoreAnimation", "CoreFoundation", "CoreImage", "CoreLocation", "CoreText", "CoreVideo", "MapKit", "WebKit", "PDFKit", "QuickLook", "SefariService", "Vision", "CoreML", "XCTest", "WidgetKit"]
         var systemFrameWorkImports = [String]()
         var ribsInterfaceImports = [String]()
         var normalFrameWorkImports = [String]()
