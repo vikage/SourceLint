@@ -65,7 +65,7 @@ class SortImportCommand: NSObject, XCSourceEditorCommand {
         lines.forEach { importLine in
             var isImportFramework = false
             systemFrameworks.forEach { systemFrameworkName in
-                if importLine.contains(systemFrameworkName) {
+                if importLine.hasSuffix(systemFrameworkName) {
                     isImportFramework = true
                 }
             }
